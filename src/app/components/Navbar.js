@@ -82,9 +82,11 @@ const Navbar = (props) => {
         </div>
 
         {/* Mobile menu button for small screens */}
-        <div className="lg:hidden">
-          <button className="text-white text-4xl" onClick={openModal}>&#9776;</button>
-        </div>
+        {!isModalOpen && (
+          <div className="lg:hidden">
+            <button className="text-white text-4xl" onClick={openModal}>&#9776;</button>
+          </div>
+        )}
 
         {/* Render the Modal component */}
         {isModalOpen && <Modal />}

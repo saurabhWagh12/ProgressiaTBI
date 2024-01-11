@@ -4,6 +4,7 @@ import GifPlayer from './components/GifPlayer';
 import Footer from './components/Footer';
 import Testimonials from './components/Testimonials';
 import Associations from './components/Associations';
+import ProgramComponent from './components/ProgramComponent'
 
 export default function Home() {
   return (
@@ -38,8 +39,9 @@ export default function Home() {
       </div>
 
     </div>
-    <Testimonials/>
+    <ProgramComponent/>
     <Associations/>
+    <Testimonials/>
     <Footer/>
     </>
   );
